@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 </head>
 <body>
-    <div class="header">
+
+    <div class="header" style = "background: radial-gradient(#fff, #fff);">
 
     
         <div class="container">
@@ -28,43 +29,70 @@
                 <img src="/images/cart (2).png" alt="" width="30px" height="30px" style="cursor: pointer;">
                 <img src="/images/menu (2).png" alt="" class="menu-icon" onclick="menutoggle()"  style="cursor: pointer;">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Taking Shopping <br> To a new level!</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum eveniet <br> mollitia repellendus, eius culpa praesentium?</p>
-                    <a href="#" class="btn"> Explore Now &#8594; </a>
-                </div>
-                <div class="col-2">
-                    <img src="/images/car.jpg" alt="car">
-                </div>
-            </div>
+            
         </div>
     </div> 
-    
-    <!--featured categories -->
 
-    <div class="categories">
-        <div class="small-container">
-            <p style="padding-bottom: 10px; font-size: 20px;">Featured Products</p>
-            <div class="row">
-                <div class="col-3">
-                    <img src="/images/shoe1.jpg" alt="">
+
+    <!--Single Products Details-->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="/images/shoe1.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="/images/shoe2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/images/shoe3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/images/shoe4.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/images/shoe5.jpg" width="100%" class="small-img">
+                    </div>
                 </div>
-                <div class="col-3">
-                    <img src="/images/shoe2.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="/images/shoe3.jpg" alt="">
-                </div>
+
+
+            </div>
+            <div class="col-2">
+                <p>Home / Shoes</p>
+                <h1>Sport Sneakers</h1>
+                <h4>$60.00</h4>
+
+                <select>
+                    <option>Selelct Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="#" class="btn">Add To Cart</a>
+                <h3>Product Details</h3>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia amet deserunt unde recusandae debitis dolores officiis facilis corrupti sint eos.</p>
             </div>
         </div>
-        
     </div>
 
 
-<!--Recommended Products-->
+    <!--title-->
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+
+    <!--Products-->
 <div class="small-container">
-   <h4 class="title">Recommended Products</h4>
     <div class="row">
         <div class="col-4">
             <img src="/images/shoe5.jpg" alt="">
@@ -87,96 +115,10 @@
             <p>$60.00</p>
         </div>
     </div>
-    <!--Other Products-->
-    <h4 class="title">Latest Products</h4>
-    <div class="row">
-        <div class="col-4">
-            <img src="/images/shoe3.jpg" alt="">
-            <h4>Canvas</h4>
-            <p>$40.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/shoe4.jpg" alt="">
-            <h4>Fade Trousers</h4>
-            <p>$30.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser1.jpg" alt="">
-            <h4>Denim Outfits</h4>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/shoe2.jpg" alt="">
-            <h4>Sports Sneakers</h4>
-            <p>$60.00</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="/images/shoe1.jpg" alt="">
-            <h4>Canvas</h4>
-            <p>$40.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/shoe4.jpg" alt="">
-            <h4>Fade Trousers</h4>
-            <p>$30.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser.jpg" alt="">
-            <h4>Denim Outfits</h4>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser2.jpg" alt="">
-            <h4>Sports Sneakers</h4>
-            <p>$60.00</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="/images/shoe3.jpg" alt="">
-            <h4>Canvas</h4>
-            <p>$40.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/shoe1.jpg" alt="">
-            <h4>Fade Trousers</h4>
-            <p>$30.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser1.jpg" alt="">
-            <h4>Denim Outfits</h4>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser2.jpg" alt="">
-            <h4>Sports Sneakers</h4>
-            <p>$60.00</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="/images/shoe3.jpg" alt="">
-            <h4>Canvas</h4>
-            <p>$40.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/shoe4.jpg" alt="">
-            <h4>Fade Trousers</h4>
-            <p>$30.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser1.jpg" alt="">
-            <h4>Denim Outfits</h4>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/shoe2.jpg" alt="">
-            <h4>Sports Sneakers</h4>
-            <p>$60.00</p>
-        </div>
-    </div>
+   
+    
+    
+    
 </div>
 
 <!--Footer-->
@@ -237,6 +179,37 @@
         }
     }
 </script>
+
+
+<!--Js for small pictures in the products-->
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-Img");
+
+    SmallImg[0].onclick = function(){
+        ProductImg.src = SmallImg[0].src;
+    }
+
+    SmallImg[1].onclick = function(){
+        ProductImg.src = SmallImg[1].src;
+    }
+
+
+    SmallImg[2].onclick = function(){
+        ProductImg.src = SmallImg[2].src;
+    }
+
+
+    SmallImg[3].onclick = function(){
+        ProductImg.src = SmallImg[3].src;
+    }
+
+
+
+
+</script>
+
 
 </body>
 </html>
