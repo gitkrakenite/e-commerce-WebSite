@@ -34,92 +34,44 @@
     </div> 
 
 
-    <!--Single Products Details-->
+<!--Account Page-->
 
-    <div class="small-container single-product">
+<div class="account-page">
+    <div class="container">
         <div class="row">
             <div class="col-2">
-                <img src="/images/shoe1.jpg" width="100%" id="ProductImg">
-
-                <div class="small-img-row">
-                    <div class="small-img-col">
-                        <img src="/images/shoe2.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="/images/shoe3.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="/images/shoe4.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="/images/shoe5.jpg" width="100%" class="small-img">
-                    </div>
-                </div>
-
-
+                <img src="/images/car.jpg" width="100%" alt="">
             </div>
+
             <div class="col-2">
-                <p>Home / Shoes</p>
-                <h1>Sport Sneakers</h1>
-                <h4>$60.00</h4>
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
 
-                <select>
-                    <option>Selelct Size</option>
-                    <option>XXL</option>
-                    <option>XL</option>
-                    <option>Large</option>
-                    <option>Medium</option>
-                    <option>Small</option>
-                </select>
-                <input type="number" value="1">
-                <a href="cart.html" class="btn">Add To Cart</a>
-                <h3>Product Details</h3>
-                <br>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia amet deserunt unde recusandae debitis dolores officiis facilis corrupti sint eos.</p>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="#">Forgot Password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email Address">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>
-
-
-    <!--title-->
-
-    <div class="small-container">
-        <div class="row row-2">
-            <h2>Related Products</h2>
-            <p>View More</p>
-        </div>
-    </div>
-
-
-    <!--Products-->
-<div class="small-container">
-    <div class="row">
-        <div class="col-4">
-            <img src="/images/shoe5.jpg" alt="">
-            <h4>Canvas</h4>
-            <p>$40.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser.jpg" alt="">
-            <h4>Fade Trousers</h4>
-            <p>$30.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/trouser1.jpg" alt="">
-            <h4>Denim Outfits</h4>
-            <p>$50.00</p>
-        </div>
-        <div class="col-4">
-            <img src="/images/shoe1.jpg" alt="">
-            <h4>Sports Sneakers</h4>
-            <p>$60.00</p>
-        </div>
-    </div>
-   
-    
-    
-    
 </div>
+
+  
 
 <!--Footer-->
 
@@ -157,10 +109,12 @@
                 </ul>
             </div>
         </div>
-        <hr>
+        <hr>   
         <p class="copyright">Copyright &copy;2020-Shopify</p>
     </div>
 </div>
+
+
 
 
 <!--Js for Toggle/ Ham-Menu-->
@@ -180,34 +134,24 @@
     }
 </script>
 
-
-<!--Js for small pictures in the products-->
+<!--Js for togggle form-->
 
 <script>
-    var ProductImg = document.getElementById("ProductImg");
-    var SmallImg = document.getElementsByClassName("small-Img");
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var indicator = document.getElementById("indicator");
 
-    SmallImg[0].onclick = function(){
-        ProductImg.src = SmallImg[0].src;
+    function register() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
     }
 
-    SmallImg[1].onclick = function(){
-        ProductImg.src = SmallImg[1].src;
+    function login() {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
     }
-
-
-    SmallImg[2].onclick = function(){
-        ProductImg.src = SmallImg[2].src;
-    }
-
-
-    SmallImg[3].onclick = function(){
-        ProductImg.src = SmallImg[3].src;
-    }
-
-
-
-
 </script>
 
 
