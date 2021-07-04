@@ -26,7 +26,6 @@
                         <li><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-           
                 <a href="cart.html"><img src="/images/cart (2).png" alt="" width="30px" height="30px" style="cursor: pointer;"></a>
                 <img src="/images/menu (2).png" alt="" class="menu-icon" onclick="menutoggle()"  style="cursor: pointer;">
             </div>
@@ -35,44 +34,24 @@
     </div> 
 
 
-<!--Account Page-->
+<!--About Us Section-->
 
-<div class="account-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
-                <img src="/images/car.jpg" width="100%" alt="">
-            </div>
-
-            <div class="col-2">
-                <div class="form-container">
-                    <div class="form-btn">
-                        <span onclick="login()">Login</span>
-                        <span onclick="register()">Register</span>
-                        <hr id="indicator">
-                    </div>
-
-                    <form id="LoginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Login</button>
-                        <a href="#">Forgot Password</a>
-                    </form>
-
-                    <form id="RegForm">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email Address">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Register</button>
-                    </form>
-
-                </div>
-            </div>
+<section class="about-us">
+    <div class="cont">
+        <div class="about-col left">
+            <h1>We offer the best platform you to buy and sell.</h1>
+            <p style="color: #777;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae cum deleniti laboriosam aspernatur reprehenderit qui quasi possimus fugiat enim ad aliquid, voluptatum itaque perferendis eaque, modi aperiam tempora? Mollitia, quidem quaerat. Aut cumque consectetur odit natus numquam ipsum facere quibusdam placeat perferendis fuga, tempora at veniam, nesciunt fugiat corrupti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus veritatis, voluptas iste nisi explicabo eius quibusdam neque soluta repellat laborum dolorum, pariatur adipisci eligendi animi inventore magnam! Aliquid, dolore.</p>
+            <br>
+            <a class="hero-btn red-btn"  href="/HTML/products.html">Explore now &rarr;</a>
+        </div>
+        <div class="about-col myimage">
+            <img src="/images/car.jpg" alt="">
         </div>
     </div>
-</div>
+</section>
 
-  
+
+
 
 <!--Footer-->
 
@@ -135,25 +114,7 @@
     }
 </script>
 
-<!--Js for togggle form-->
 
-<script>
-    var LoginForm = document.getElementById("LoginForm");
-    var RegForm = document.getElementById("RegForm");
-    var indicator = document.getElementById("indicator");
-
-    function register() {
-        RegForm.style.transform = "translateX(0px)";
-        LoginForm.style.transform = "translateX(0px)";
-        indicator.style.transform = "translateX(100px)";
-    }
-
-    function login() {
-        RegForm.style.transform = "translateX(300px)";
-        LoginForm.style.transform = "translateX(300px)";
-        indicator.style.transform = "translateX(0px)";
-    }
-</script>
 
 
 </body>

@@ -661,6 +661,56 @@ form a {
 }
 
 
+/*About us page*/
+
+
+.about-us{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cont{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.about-col {
+    flex-basis: 50%;
+}
+
+.cont img {
+    width: 100%;
+    
+}
+
+.about-col h1 {
+    padding-bottom: 5%;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.about-col p {
+    
+    line-height: 1.6em;
+    font-weight: normal;
+    padding: 4px;
+}
+
+.left {
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.red-btn{
+    margin-top: 15%;
+}
+
+
 
 /* Media query for less than 600 screen size */
 @media only screen and (max-width: 600px){
@@ -705,7 +755,53 @@ form a {
     
     
    
+    /* About us */
+
+    .about-us{
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
     
+    .cont{
+        width: 95%;
+        margin: auto;
+        display: block;
+        
+    }
+    
+    
+    .cont img {
+        margin-top: 4%;
+        margin-right: 1%;
+        width: 100%;
+        
+    }
+    
+    .about-col h1 {
+        padding-bottom: 5%;
+        font-size: 22px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+    
+    .about-col p {
+        
+        line-height: 1.6em;
+        font-weight: normal;
+        padding: 4px;
+    }
+    
+    .left {
+        border-radius: 5px;
+        padding: 4px;
+        
+    }
+    
+    .red-btn{
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
     
     
     
